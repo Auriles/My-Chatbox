@@ -4,6 +4,21 @@ import Formulaire from './Formulaire';
 import Message from './Message';
 
 class App extends React.Component {
+
+  state = {
+    messages: {}
+  }
+
+  addMessage = (message) => {
+    // Copier le state
+    const messages = {...this.state.messages}
+    // Ajout du message avec clé timestamp
+    const timestamp = Date.now();
+    messages[`message-${timestamp}`] = message;
+    // Mise à jour du state
+    this.setState({ messages });
+  };
+
   render() {
     return (
       <div className="box">
@@ -11,7 +26,7 @@ class App extends React.Component {
           <div className="messages">
             <Message pseudo={this.props.params.pseudo}/>
           </div>
-          <Formulaire />
+          <Formulaire addMessage={this.addMessage} />
         </div>
       </div>
       );
