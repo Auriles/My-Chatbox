@@ -9,7 +9,7 @@ class App extends React.Component {
       <div className="box">
         <div>
           <div className="messages">
-            <Message />
+            <Message pseudo="auri"/>
           </div>
           <Formulaire />
         </div>
