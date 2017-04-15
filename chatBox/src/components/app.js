@@ -1,7 +1,7 @@
 // React
 import React from 'react';
-import Formulaire from './formulaire';
-import Message from './message';
+import Formulaire from './Formulaire';
+import Message from './Message';
 
 class App extends React.Component {
   render() {

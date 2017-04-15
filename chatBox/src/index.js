@@ -2,8 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 // Components
-import Connexion from './components/connexion';
-import App from './components/app';
+import Connexion from './components/Connexion';
+import App from './components/App';
 import NotFound from './components/NotFound';
 // Rooter
 import { BrowserRouter, Match, Miss } from 'react-router';
